@@ -1,0 +1,51 @@
+media: images
+
+content:
+  - name: products
+    label: Produktet
+    type: collection
+    path: products
+    filename: "{primary}.json"
+    operations:
+      create: true
+      rename: true
+      delete: true
+    fields:
+      - name: name
+        label: Emri i produktit
+        type: string
+        required: true
+
+      - name: price
+        label: Çmimi
+        type: number
+        required: true
+
+      - name: category
+        label: Kategoria
+        type: select
+        options:
+          values:
+            - Kamera
+            - Kasa lekësh
+            - Printera termikë
+            - Dronë
+            - Ora smart
+            - Kufje
+            - Pajisje interneti
+            - Kasetofona
+            - Aksesorë
+            - Të tjera
+
+      - name: description
+        label: Përshkrimi
+        type: text
+
+      - name: image
+        label: Foto
+        type: image
+
+      - name: featured
+        label: Produkt i veçuar
+        type: boolean
+        default: false
