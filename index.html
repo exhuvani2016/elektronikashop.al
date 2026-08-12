@@ -393,6 +393,19 @@
   .mobile-whatsapp-action{font-size:10px;padding:6px 7px}
 }
 
+/* Fix mobile header overlap: desktop contact block is replaced by the mobile actions */
+@media(max-width:760px){
+  .premium-header-actions{display:none !important;}
+  .premium-header-main{padding-top:10px;}
+}
+@media(max-width:390px){
+  .mobile-contact-actions{width:148px;}
+  .mobile-phone-action,
+  .mobile-whatsapp-action{font-size:9.4px;padding:6px 6px;}
+  .premium-brand-text strong{font-size:15px;}
+  .premium-brand-text small{font-size:8.5px;letter-spacing:3px;}
+}
+
 </style>
 </head>
 <body>
