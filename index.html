@@ -74,36 +74,270 @@
   box-shadow:0 10px 24px rgba(24,169,87,.22);
 }
 .direct-whatsapp:hover{background:#128c47}
+
+/* ===== HEADER PROFESIONAL ===== */
+.premium-topbar{
+  background:#101a36;
+  font-size:12px;
+  letter-spacing:.15px;
+}
+.premium-topbar-inner{min-height:30px}
+.premium-topbar a{color:#fff;opacity:.94}
+
+.site-header{
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid #e8ecf6;
+  box-shadow:0 8px 28px rgba(28,45,90,.06);
+}
+.premium-header-main{
+  min-height:74px;
+  grid-template-columns:225px minmax(360px,1fr) auto;
+  gap:26px;
+}
+.premium-brand{gap:10px}
+.premium-brand-mark{
+  width:42px;
+  height:42px;
+  border-radius:13px;
+  font-size:22px;
+  box-shadow:0 9px 22px rgba(57,91,230,.22);
+}
+.premium-brand-text strong{
+  font-size:18px;
+  letter-spacing:.2px;
+}
+.premium-brand-text small{
+  margin-top:4px;
+  font-size:10px;
+  letter-spacing:4.5px;
+}
+
+.premium-search{
+  height:46px;
+  border:1px solid #dfe5f3;
+  border-radius:14px;
+  background:#f8faff;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.8);
+}
+.premium-search input{padding:0 18px;font-size:14px}
+.premium-search button{
+  width:54px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,#246bfd,#6a5cff);
+}
+.premium-search button svg{
+  width:21px;
+  height:21px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2;
+  stroke-linecap:round;
+}
+
+.premium-header-actions{gap:10px}
+.premium-phone{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 11px;
+  border-radius:13px;
+  transition:.2s ease;
+}
+.premium-phone:hover{background:#f4f7ff}
+.premium-phone-icon{
+  width:36px;
+  height:36px;
+  display:grid;
+  place-items:center;
+  border-radius:11px;
+  background:#eef3ff;
+  color:#246bfd;
+}
+.premium-phone-icon svg{
+  width:18px;
+  height:18px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.9;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.premium-phone-copy{display:flex;flex-direction:column;line-height:1.15}
+.premium-phone-copy small{font-size:11px;color:var(--muted);margin-bottom:4px}
+.premium-phone-copy strong{font-size:13px;color:var(--text);white-space:nowrap}
+
+.premium-nav{
+  border-top:1px solid #edf0f7;
+  background:#fff;
+  box-shadow:none;
+}
+.premium-nav-inner{min-height:56px;gap:6px}
+.category-select-shell{
+  position:relative;
+  width:252px;
+  min-width:252px;
+  height:44px;
+  display:flex;
+  align-items:center;
+  border-radius:13px;
+  overflow:hidden;
+  background:linear-gradient(135deg,#246bfd 0%,#625cf6 100%);
+  box-shadow:0 8px 20px rgba(56,91,226,.20);
+  transition:.2s ease;
+}
+.category-select-shell:hover{
+  transform:translateY(-1px);
+  box-shadow:0 11px 24px rgba(56,91,226,.27);
+}
+.category-select-icon{
+  position:absolute;
+  left:14px;
+  z-index:2;
+  width:19px;
+  height:19px;
+  pointer-events:none;
+  color:#fff;
+}
+.category-select-icon svg{width:100%;height:100%;fill:currentColor}
+.category-select-chevron{
+  position:absolute;
+  right:13px;
+  z-index:2;
+  width:18px;
+  height:18px;
+  pointer-events:none;
+  color:#fff;
+}
+.category-select-chevron svg{
+  width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;
+}
+.premium-category-filter{
+  appearance:none;
+  -webkit-appearance:none;
+  width:100%;
+  height:100%;
+  min-width:0;
+  margin:0;
+  padding:0 42px 0 43px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  color:#fff;
+  font-size:13px;
+  font-weight:850;
+  cursor:pointer;
+}
+.premium-category-filter:hover,.premium-category-filter:focus{
+  border:0;
+  box-shadow:none;
+  outline:none;
+}
+.premium-category-filter option{
+  background:#fff;
+  color:#17203d;
+  font-weight:700;
+}
+.premium-nav-links{
+  gap:4px;
+  padding-left:12px;
+}
+.premium-nav-links a{
+  position:relative;
+  padding:9px 13px;
+  border-radius:10px;
+  font-size:13px;
+  font-weight:760;
+  transition:.18s ease;
+}
+.premium-nav-links a:hover{
+  color:#245bd9;
+  background:#f3f6ff;
+}
+.premium-whatsapp{
+  margin-left:auto;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  min-height:40px;
+  padding:0 15px;
+  border-radius:12px;
+  background:#18a957;
+  color:#fff;
+  font-size:13px;
+  font-weight:850;
+  box-shadow:0 8px 18px rgba(24,169,87,.18);
+  transition:.18s ease;
+}
+.premium-whatsapp:hover{
+  color:#fff;
+  background:#148e4b;
+  transform:translateY(-1px);
+  box-shadow:0 11px 22px rgba(24,169,87,.25);
+}
+.premium-whatsapp-icon{width:18px;height:18px;display:grid;place-items:center}
+.premium-whatsapp-icon svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.premium-whatsapp-icon svg path:nth-child(2){fill:currentColor;stroke:none}
+
+@media(max-width:1050px){
+  .premium-header-main{grid-template-columns:210px 1fr;gap:18px}
+  .premium-header-actions{grid-column:2;justify-self:end;position:absolute;right:20px}
+  .premium-search{margin-right:185px}
+  .category-select-shell{width:225px;min-width:225px}
+  .premium-nav-links{padding-left:6px}
+  .premium-nav-links a{padding:8px 8px;font-size:12px}
+  .premium-whatsapp{padding:0 11px}
+}
+@media(max-width:760px){
+  .premium-topbar-inner{min-height:28px;font-size:10px}
+  .premium-topbar-inner span{max-width:70%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .premium-header-main{min-height:68px;gap:10px;padding:10px 0}
+  .premium-brand-mark{width:38px;height:38px;border-radius:11px;font-size:20px}
+  .premium-brand-text strong{font-size:16px}
+  .premium-brand-text small{font-size:9px;letter-spacing:3.6px}
+  .premium-search{height:44px;margin:0}
+  .premium-header-actions{position:static;margin-left:auto}
+  .premium-nav-inner{padding:8px 0}
+  .category-select-shell{width:100%;min-width:0;height:44px}
+  .premium-nav-links,.premium-whatsapp{display:none}
+}
+
 </style>
 </head>
 <body>
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <span>📦 Transport në Shqipëri dhe Kosovë</span>
-      <a href="tel:+355692053677">📞 069 205 3677</a>
+  <div class="topbar premium-topbar">
+    <div class="container topbar-inner premium-topbar-inner">
+      <span>Transport në Shqipëri dhe Kosovë · Porosi direkte në WhatsApp</span>
+      <a href="tel:+355692053677">069 205 3677</a>
     </div>
   </div>
 
   <header class="site-header">
-    <div class="container header-main">
-      <a class="brand" href="#home" aria-label="Elektronika Shop.al">
-        <span class="brand-mark">E</span>
-        <span class="brand-text">
+    <div class="container header-main premium-header-main">
+      <a class="brand premium-brand" href="#home" aria-label="Elektronika Shop.al">
+        <span class="brand-mark premium-brand-mark">E</span>
+        <span class="brand-text premium-brand-text">
           <strong>ELEKTRONIKA</strong>
           <small>SHOP.AL</small>
         </span>
       </a>
 
-      <form class="search-box" id="headerSearchForm" role="search">
-        <input id="headerSearch" type="search" placeholder="Kërko produkt..." aria-label="Kërko produkt" />
-        <button type="submit" aria-label="Kërko">⌕</button>
+      <form class="search-box premium-search" id="headerSearchForm" role="search">
+        <input id="headerSearch" type="search" placeholder="Kërko produkt, markë ose kategori..." aria-label="Kërko produkt" />
+        <button type="submit" aria-label="Kërko">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+        </button>
       </form>
 
-      <div class="header-actions">
-        <a class="icon-action hide-mobile" href="tel:+355692053677">
-          <span>☎</span>
-          <small>Na telefono</small>
+      <div class="header-actions premium-header-actions">
+        <a class="premium-phone hide-mobile" href="tel:+355692053677" aria-label="Telefono 069 205 3677">
+          <span class="premium-phone-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg>
+          </span>
+          <span class="premium-phone-copy"><small>Na telefono</small><strong>069 205 3677</strong></span>
         </a>
+
         <button class="cart-button" id="openCart" type="button" aria-label="Hap shportën">
           <span class="cart-icon">🛒</span>
           <span class="cart-copy"><small>Shporta</small><strong id="cartTotalHeader">0 Lekë</strong></span>
@@ -112,17 +346,32 @@
       </div>
     </div>
 
-    <nav class="main-nav" aria-label="Menuja kryesore">
-      <div class="container nav-inner">
-        <select id="categoryFilter" class="nav-category-filter" aria-label="Filtro sipas kategorisë"></select>
-        <div class="nav-links" id="navLinks">
+    <nav class="main-nav premium-nav" aria-label="Menuja kryesore">
+      <div class="container nav-inner premium-nav-inner">
+        <div class="category-select-shell">
+          <span class="category-select-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 5h6v6H4V5Zm10 0h6v6h-6V5ZM4 15h6v4H4v-4Zm10 0h6v4h-6v-4Z"/></svg>
+          </span>
+          <select id="categoryFilter" class="nav-category-filter premium-category-filter" aria-label="Filtro sipas kategorisë"></select>
+          <span class="category-select-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m7 9 5 5 5-5"/></svg>
+          </span>
+        </div>
+
+        <div class="nav-links premium-nav-links" id="navLinks">
           <a href="#home">Kryefaqja</a>
           <a href="#products">Produktet</a>
           <a href="#offers">Ofertat</a>
           <a href="#about">Rreth nesh</a>
           <a href="#contact">Kontakt</a>
         </div>
-        <a class="nav-whatsapp" href="https://wa.me/355692053677" target="_blank" rel="noopener">WhatsApp</a>
+
+        <a class="nav-whatsapp premium-whatsapp" href="https://wa.me/355692053677" target="_blank" rel="noopener" aria-label="Porosit në WhatsApp">
+          <span class="premium-whatsapp-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.45L3 20.5l1.3-4.75A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.3 7.8c.2-.45.4-.47.72-.48h.62c.2 0 .4.03.55.4l.75 1.8c.1.25.08.45-.06.64l-.58.75c-.14.17-.27.32-.08.65.18.32.8 1.32 1.75 2.13 1.2 1.05 2.2 1.38 2.52 1.53.32.16.51.13.7-.08l.88-1.03c.2-.23.4-.18.66-.1l1.7.8c.3.14.48.22.55.34.07.12.07.7-.17 1.35-.24.65-1.4 1.24-1.94 1.31-.5.07-1.12.1-1.8-.12-.42-.13-.96-.31-1.66-.62-.73-.32-3.2-1.18-5.45-3.18-1.82-1.62-3.05-3.62-3.4-4.23-.36-.6-.04-2.92.74-3.96Z"/></svg>
+          </span>
+          <span>WhatsApp</span>
+        </a>
       </div>
     </nav>
   </header>
