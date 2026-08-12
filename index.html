@@ -605,6 +605,75 @@
   .product-price strong{font-size:21px}
   .whatsapp-order-btn{font-size:13px}
 }
+
+/* ===== PIKA 5: RRETH NESH PROFESIONAL ===== */
+.about-card-premium{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(145deg,#ffffff 0%,#f7f9ff 58%,#eef3ff 100%);
+  border-color:#dce5fb;
+}
+.about-card-premium::after{
+  content:"";
+  position:absolute;
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  right:-115px;
+  top:-115px;
+  background:radial-gradient(circle,rgba(36,107,253,.12),rgba(123,92,255,.04) 55%,transparent 72%);
+  pointer-events:none;
+}
+.about-card-premium > *{position:relative;z-index:1}
+.about-card-premium h2{
+  max-width:760px;
+  font-size:34px;
+  letter-spacing:-.8px;
+  margin-bottom:14px;
+}
+.about-card-premium .about-lead{
+  max-width:760px;
+  font-size:16px;
+  line-height:1.7;
+  margin:0;
+}
+.about-service-list{
+  display:grid;
+  gap:12px;
+  margin-top:28px;
+}
+.about-service-item{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  padding:16px 18px;
+  background:rgba(255,255,255,.86);
+  border:1px solid #e1e7f5;
+  border-radius:16px;
+  box-shadow:0 8px 20px rgba(52,74,135,.045);
+}
+.about-service-icon{
+  flex:0 0 34px;
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--primary),var(--primary-2));
+  color:#fff;
+  font-weight:900;
+  box-shadow:0 8px 18px rgba(36,107,253,.18);
+}
+.about-service-item strong,
+.about-service-item small{display:block}
+.about-service-item strong{font-size:15px;color:var(--text);margin-top:1px}
+.about-service-item small{font-size:13px;line-height:1.55;color:var(--muted);margin-top:4px}
+@media(max-width:760px){
+  .about-card-premium h2{font-size:27px;letter-spacing:-.45px}
+  .about-card-premium .about-lead{font-size:15px}
+  .about-service-list{margin-top:22px}
+  .about-service-item{padding:14px}
+}
 </style>
 </head>
 <body>
@@ -786,14 +855,33 @@
 
     <section class="section about-section" id="about">
       <div class="container about-grid">
-        <div class="about-card">
-          <span class="section-kicker">ELEKTRONIKA SHOP.AL</span>
-          <h2>Zgjidhje elektronike për shtëpi, biznes dhe argëtim</h2>
-          <p>Ofrojmë produkte praktike me çmime konkurruese, përshkrime të qarta dhe porosi direkte në telefon ose WhatsApp.</p>
-          <div class="about-stats">
-            <div><strong id="productCountStat">23+</strong><small>produkte</small></div>
-            <div><strong>6</strong><small>kategori</small></div>
-            <div><strong>2</strong><small>vende transporti</small></div>
+        <div class="about-card about-card-premium">
+          <span class="section-kicker">RRETH NESH</span>
+          <h2>Elektronika Shop.al – pajisje elektronike për shtëpi dhe biznes</h2>
+          <p class="about-lead">Një katalog i thjeshtë dhe i qartë për të zgjedhur produktin që të duhet dhe për ta porositur direkt, pa hapa të komplikuar.</p>
+
+          <div class="about-service-list">
+            <div class="about-service-item">
+              <span class="about-service-icon" aria-hidden="true">✓</span>
+              <div>
+                <strong>Porosi e thjeshtë</strong>
+                <small>Zgjidh produktin dhe porosit direkt në WhatsApp.</small>
+              </div>
+            </div>
+            <div class="about-service-item">
+              <span class="about-service-icon" aria-hidden="true">✓</span>
+              <div>
+                <strong>Informacion i qartë</strong>
+                <small>Çmimet dhe specifikimet kryesore i ke të dukshme para porosisë.</small>
+              </div>
+            </div>
+            <div class="about-service-item">
+              <span class="about-service-icon" aria-hidden="true">✓</span>
+              <div>
+                <strong>Dërgesa në Shqipëri dhe Kosovë</strong>
+                <small>Na kontakto për porosinë, transportin dhe çdo pyetje për produktin.</small>
+              </div>
+            </div>
           </div>
         </div>
         <div class="contact-card" id="contact">
@@ -1635,7 +1723,8 @@ async function init() {
 
   await loadCmsProducts();
 
-  document.getElementById("productCountStat").textContent = `${products.length}+`;
+  const productCountStat = document.getElementById("productCountStat");
+  if (productCountStat) productCountStat.textContent = `${products.length}+`;
   renderCategoryNavigation();
   renderProducts();
   renderCart();
