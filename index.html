@@ -406,6 +406,205 @@
   .premium-brand-text small{font-size:8.5px;letter-spacing:3px;}
 }
 
+
+
+/* ===== PROFESSIONAL PRODUCT CARDS ===== */
+.products-section{background:linear-gradient(180deg,#f8faff 0%,#f1f5ff 100%)}
+.products-grid{gap:24px}
+.product-card{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  min-height:100%;
+  background:#fff;
+  border:1px solid #e2e8f5;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 8px 28px rgba(31,50,95,.07);
+  transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease;
+}
+.product-card:hover{
+  transform:translateY(-6px);
+  border-color:#c8d7ff;
+  box-shadow:0 20px 48px rgba(31,50,95,.14);
+}
+.product-card:focus{outline:3px solid rgba(36,107,253,.18);outline-offset:3px}
+.product-image{
+  height:275px;
+  position:relative;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  background:linear-gradient(180deg,#fbfcff 0%,#f5f8ff 100%);
+  border-bottom:1px solid #edf1f8;
+}
+.product-image:after{
+  content:"";
+  position:absolute;
+  inset:auto 12% 0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#dce5fb,transparent);
+}
+.product-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  padding:24px;
+  transition:transform .28s ease;
+}
+.product-card:hover .product-image img{transform:scale(1.035)}
+.product-badge{
+  position:absolute;
+  left:16px;
+  top:16px;
+  z-index:2;
+  display:inline-flex;
+  align-items:center;
+  min-height:30px;
+  padding:0 11px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#2563eb,#6d5dfc);
+  color:#fff;
+  font-size:10px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:.55px;
+  box-shadow:0 8px 20px rgba(62,89,220,.22);
+}
+.quick-view{
+  position:absolute;
+  right:16px;
+  top:16px;
+  z-index:3;
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border:1px solid #dfe6f5;
+  border-radius:13px;
+  background:rgba(255,255,255,.96);
+  color:#20345f;
+  box-shadow:0 8px 20px rgba(31,50,95,.08);
+  transition:.2s ease;
+}
+.quick-view:hover{background:#eef4ff;color:#246bfd;border-color:#bdd0ff;transform:translateY(-1px)}
+.quick-view svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.product-info{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  padding:20px 20px 19px;
+}
+.product-category{
+  display:inline-flex;
+  align-self:flex-start;
+  align-items:center;
+  min-height:27px;
+  padding:0 10px;
+  border-radius:999px;
+  background:#edf3ff;
+  color:#245dcc;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.65px;
+  text-transform:uppercase;
+}
+.product-info h3{
+  margin:11px 0 14px;
+  min-height:48px;
+  color:#101c3d;
+  font-size:17px;
+  line-height:1.4;
+  font-weight:800;
+  letter-spacing:-.2px;
+}
+.product-price{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding-top:14px;
+  margin-top:auto;
+  margin-bottom:16px;
+  border-top:1px solid #edf1f7;
+}
+.product-price strong{
+  color:#0f1b3d;
+  font-size:22px;
+  line-height:1;
+  letter-spacing:-.4px;
+}
+.stock-status{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  color:#14924b;
+  font-size:10px;
+  font-weight:900;
+  white-space:nowrap;
+}
+.stock-status:before{
+  content:"✓";
+  width:18px;
+  height:18px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#e9f9ef;
+  color:#14924b;
+  font-size:11px;
+}
+.product-actions.whatsapp-only-action{display:block}
+.whatsapp-order-btn{
+  width:100%;
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  border:0;
+  border-radius:14px;
+  background:linear-gradient(135deg,#13a953,#20c36a);
+  color:#fff;
+  font-weight:900;
+  font-size:14px;
+  box-shadow:0 10px 24px rgba(24,169,87,.18);
+  transition:transform .18s ease,box-shadow .18s ease,filter .18s ease;
+}
+.whatsapp-order-btn:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(24,169,87,.26);filter:saturate(1.05)}
+.whatsapp-order-btn svg{width:20px;height:20px;fill:currentColor;flex:0 0 auto}
+.product-detail-hint{
+  display:block;
+  margin-top:10px;
+  color:#74809b;
+  font-size:11px;
+  font-weight:700;
+  text-align:center;
+}
+@media(max-width:1050px){
+  .product-image{height:250px}
+}
+@media(max-width:760px){
+  .products-grid{gap:14px}
+  .product-card{border-radius:20px}
+  .product-image{height:205px}
+  .product-image img{padding:18px}
+  .product-info{padding:15px}
+  .product-info h3{font-size:15px;min-height:43px;margin:9px 0 12px}
+  .product-price{padding-top:12px;margin-bottom:13px}
+  .product-price strong{font-size:19px}
+  .whatsapp-order-btn{min-height:44px;font-size:12px;border-radius:12px}
+  .product-detail-hint{font-size:10px}
+  .quick-view{width:38px;height:38px;right:12px;top:12px}
+  .product-badge{left:12px;top:12px}
+}
+@media(max-width:430px){
+  .product-image{height:260px}
+  .product-info{padding:17px}
+  .product-info h3{font-size:16px;min-height:auto}
+  .product-price strong{font-size:21px}
+  .whatsapp-order-btn{font-size:13px}
+}
 </style>
 </head>
 <body>
@@ -1065,16 +1264,25 @@ function productCard(product) {
     <article class="product-card" data-product-card="${product.id}" tabindex="0" role="button" aria-label="Shiko detajet e ${product.name}">
       <div class="product-image">
         ${product.badge ? `<span class="product-badge">${product.badge}</span>` : ""}
-        <button class="quick-view" type="button" data-quick-view="${product.id}" aria-label="Shiko ${product.name}">⌕</button>
-        <img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23f1f5ff%22/%3E%3Ctext x=%22300%22 y=%22185%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2226%22 fill=%22%23246bfd%22%3EElektronika Shop.al%3C/text%3E%3Ctext x=%22300%22 y=%22225%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2218%22 fill=%22%2368708a%22%3EFoto nga Wix nuk u ngarkua%3C/text%3E%3C/svg%3E'" loading="lazy" />
+        <button class="quick-view" type="button" data-quick-view="${product.id}" aria-label="Shiko detajet e ${product.name}" title="Shiko detajet">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.7"/></svg>
+        </button>
+        <img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23f1f5ff%22/%3E%3Ctext x=%22300%22 y=%22185%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2226%22 fill=%22%23246bfd%22%3EElektronika Shop.al%3C/text%3E%3Ctext x=%22300%22 y=%22225%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2218%22 fill=%22%2368708a%22%3EFoto nuk u ngarkua%3C/text%3E%3C/svg%3E'" />
       </div>
       <div class="product-info">
         <span class="product-category">${product.category}</span>
         <h3>${product.name}</h3>
-        <div class="product-price"><strong>${formatPrice(product.price)}</strong><small>NË STOK</small></div>
-        <div class="product-actions whatsapp-only-action">
-          <button class="whatsapp-product whatsapp-order-btn" type="button" data-whatsapp-product="${product.id}" aria-label="Porosit ${product.name} në WhatsApp">Porosit në WhatsApp</button>
+        <div class="product-price">
+          <strong>${formatPrice(product.price)}</strong>
+          <span class="stock-status">NË STOK</span>
         </div>
+        <div class="product-actions whatsapp-only-action">
+          <button class="whatsapp-product whatsapp-order-btn" type="button" data-whatsapp-product="${product.id}" aria-label="Porosit ${product.name} në WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.49A11.82 11.82 0 0 0 12.08 0C5.56 0 .25 5.3.25 11.82c0 2.08.54 4.11 1.57 5.9L.15 23.82l6.24-1.64a11.8 11.8 0 0 0 5.68 1.45h.01c6.52 0 11.83-5.3 11.83-11.82 0-3.16-1.2-6.13-3.39-8.32Zm-8.44 18.15h-.01a9.78 9.78 0 0 1-4.98-1.36l-.36-.21-3.7.97.99-3.61-.23-.37a9.78 9.78 0 0 1-1.5-5.24c0-5.4 4.4-9.79 9.8-9.79 2.61 0 5.07 1.02 6.91 2.87a9.72 9.72 0 0 1 2.87 6.93c0 5.4-4.39 9.79-9.79 9.79Zm5.37-7.33c-.29-.15-1.74-.86-2.01-.96-.27-.1-.47-.15-.66.15-.2.29-.76.96-.93 1.16-.17.2-.34.22-.64.07-.29-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.6-.91-2.18-.24-.58-.48-.5-.66-.51h-.56c-.2 0-.51.07-.78.37-.27.29-1.03 1.01-1.03 2.47s1.06 2.87 1.21 3.07c.15.2 2.09 3.19 5.06 4.47.71.31 1.26.49 1.69.63.71.23 1.35.19 1.86.12.57-.08 1.74-.71 1.99-1.4.24-.69.24-1.28.17-1.4-.07-.12-.27-.2-.56-.34Z"/></svg>
+            <span>Porosit në WhatsApp</span>
+          </button>
+        </div>
+        <span class="product-detail-hint">Kliko kartën për specifikat</span>
       </div>
     </article>
   `;
