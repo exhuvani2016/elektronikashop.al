@@ -303,6 +303,52 @@
   .premium-nav-links,.premium-whatsapp{display:none}
 }
 
+
+/* Mobile contact actions */
+.mobile-contact-actions{display:none}
+@media(max-width:760px){
+  .mobile-contact-actions{
+    order:4;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-top:0;
+  }
+  .mobile-phone-action,
+  .mobile-whatsapp-action{
+    width:100%;
+    min-height:46px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    border-radius:13px;
+    font-size:13px;
+    font-weight:850;
+  }
+  .mobile-phone-action{
+    background:#f4f7ff;
+    color:#245bd9;
+    border:1px solid #dce5ff;
+  }
+  .mobile-whatsapp-action{
+    background:#18a957;
+    color:#fff;
+    border:1px solid #18a957;
+    box-shadow:0 8px 18px rgba(24,169,87,.18);
+  }
+  .mobile-contact-actions svg{
+    width:18px;
+    height:18px;
+    fill:none;
+    stroke:currentColor;
+    stroke-width:1.9;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -329,6 +375,17 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
         </button>
       </form>
+
+      <div class="mobile-contact-actions" aria-label="Kontakt i shpejtë">
+        <a class="mobile-phone-action" href="tel:+355692053677" aria-label="Na telefono në 069 205 3677">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg>
+          <span>Na telefono · 069 205 3677</span>
+        </a>
+        <a class="mobile-whatsapp-action" href="https://wa.me/355692053677" target="_blank" rel="noopener" aria-label="Porosit në WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.45L3 20.5l1.3-4.75A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.3 7.8c.2-.45.4-.47.72-.48h.62c.2 0 .4.03.55.4l.75 1.8c.1.25.08.45-.06.64l-.7.9c-.14.18-.18.34-.06.56.54.95 1.2 1.76 2.03 2.45.8.66 1.55 1.05 2.43 1.37.25.09.42.04.58-.14l.9-1.05c.2-.23.42-.27.68-.17l1.68.8c.27.13.44.2.5.32.06.12.06.7-.16 1.37-.22.67-1.3 1.28-1.8 1.35-.47.07-1.08.1-1.74-.1-.4-.12-.92-.3-1.58-.6-.28-.12-4.9-1.8-6.7-6.23-.5-1.23-.53-2.14-.46-2.6.07-.46.42-1.06.68-1.34Z"/></svg>
+          <span>Porosit në WhatsApp</span>
+        </a>
+      </div>
 
       <div class="header-actions premium-header-actions">
         <a class="premium-phone hide-mobile" href="tel:+355692053677" aria-label="Telefono 069 205 3677">
