@@ -900,7 +900,7 @@ function bindEvents() {
     if (event.target.closest("#activeFilter button")) resetFilters();
   });
 
-  els.categoryFilter.addEventListener("change", event => selectCategory(event.target.value, false));
+  els.categoryFilter.addEventListener("change", event => selectCategory(event.target.value, true));
   els.sortProducts.addEventListener("change", event => { state.sort = event.target.value; renderProducts(); });
   els.headerSearchForm.addEventListener("submit", event => {
     event.preventDefault();
