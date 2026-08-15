@@ -744,33 +744,6 @@
 @media(max-width:760px){.mega-menu-wrap{width:100%;min-width:0}.mega-menu-trigger{height:50px;border-radius:14px;padding-inline:15px}.mega-trigger-copy strong{font-size:14px}.mega-menu-panel{left:0;top:calc(100% + 8px);width:100%;max-height:70vh;overflow:auto;padding:16px;border-radius:18px}.mega-menu-head{align-items:flex-start}.mega-menu-head>div span{display:none}.mega-menu-head strong{font-size:16px}.mega-menu-head>a{font-size:10.5px;padding:8px 9px}.mega-menu-groups{grid-template-columns:1fr 1fr;gap:8px;padding-top:13px}.mega-group,.mega-group:nth-child(2),.mega-group:nth-child(-n+2),.mega-group:nth-child(n+3){border:0;padding:0}.mega-group h3{font-size:8.5px;margin-bottom:6px}.mega-item{padding:8px 5px;gap:8px}.mega-item-icon{width:32px;height:32px;flex-basis:32px;border-radius:9px;font-size:9px}.mega-item strong{font-size:11px}.mega-item small{display:none}.mega-menu-bottom{margin-top:12px;padding:10px 11px;font-size:10px}.mega-menu-bottom span{max-width:58%}.mega-menu-bottom a{font-size:10px;padding:0 9px}.premium-nav-links,.premium-whatsapp{display:none!important}}
 @media(max-width:430px){.mega-menu-panel{max-height:72vh}.mega-menu-groups{grid-template-columns:1fr}.mega-menu-head>a{font-size:10px}.mega-menu-bottom span{display:none}.mega-menu-bottom a{width:100%}}
 
-
-
-/* ===== HOMEPAGE PRODUCT CAROUSEL ===== */
-.product-carousel-shell{position:relative;margin:0 -6px;padding:6px}
-.products-carousel{display:flex!important;gap:22px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;padding:8px 2px 18px;scrollbar-width:none;overscroll-behavior-inline:contain}
-.products-carousel::-webkit-scrollbar{display:none}
-.products-carousel .product-card{flex:0 0 calc((100% - 66px)/4);min-width:0;scroll-snap-align:start;scroll-snap-stop:normal}
-.product-carousel-arrow{position:absolute;top:46%;transform:translateY(-50%);z-index:8;width:48px;height:48px;border:1px solid #dce5fb;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.96);color:#2447aa;box-shadow:0 12px 30px rgba(30,52,112,.16);transition:.18s ease;backdrop-filter:blur(8px)}
-.product-carousel-arrow:hover:not(:disabled){transform:translateY(-50%) scale(1.06);border-color:#9fb6ff;box-shadow:0 15px 34px rgba(30,52,112,.22)}
-.product-carousel-arrow:disabled{opacity:.28;cursor:default;box-shadow:none}
-.product-carousel-arrow svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.product-carousel-prev{left:-21px}.product-carousel-next{right:-21px}
-.product-carousel-meta{display:flex;align-items:center;justify-content:flex-end;gap:14px;margin-top:2px}
-.product-carousel-progress{width:150px;height:4px;border-radius:999px;background:#dfe6f6;overflow:hidden}
-.product-carousel-progress span{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,#246bfd,#7258f5);transition:width .15s ease}
-.product-carousel-swipe{display:none;color:#68708a;font-size:12px;font-weight:750}
-@media(max-width:1050px){.products-carousel .product-card{flex-basis:calc((100% - 44px)/3)}}
-@media(max-width:760px){
-  .product-carousel-shell{margin:0 -11px;padding:4px 0 4px 11px}
-  .products-carousel{gap:13px;padding:6px 22px 16px 0;scroll-padding-left:0}
-  .products-carousel .product-card{flex:0 0 82%;max-width:330px}
-  .product-carousel-arrow{display:none}
-  .product-carousel-meta{justify-content:space-between;margin-top:0}
-  .product-carousel-swipe{display:inline}
-  .product-carousel-progress{width:105px}
-}
-@media(max-width:430px){.products-carousel .product-card{flex-basis:86%;max-width:315px}}
 </style>
 </head>
 <body>
@@ -956,19 +929,7 @@
 <div class="product-controls"><a class="catalog-link-btn" href="produkte.html">Shiko të gjitha produktet →</a></div>
 </div>
 <div class="active-filter" hidden="" id="activeFilter"></div>
-<div class="product-carousel-shell" id="productCarouselShell">
-<button class="product-carousel-arrow product-carousel-prev" id="productCarouselPrev" type="button" aria-label="Produktet e mëparshme">
-<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
-</button>
-<div class="products-grid products-carousel" id="productsGrid"></div>
-<button class="product-carousel-arrow product-carousel-next" id="productCarouselNext" type="button" aria-label="Produktet e tjera">
-<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
-</button>
-</div>
-<div class="product-carousel-meta" aria-hidden="true">
-<span class="product-carousel-swipe">Rrëshqit për të parë më shumë →</span>
-<div class="product-carousel-progress"><span id="productCarouselProgress"></span></div>
-</div>
+<div class="products-grid" id="productsGrid"></div>
 <p style="margin-top:18px;color:#68708a;font-size:13px">Titujt, çmimet, fotot dhe përshkrimet janë marrë nga faqja ekzistuese ElektronikaShopAL në Wix.</p>
 <div class="empty-state" hidden="" id="emptyState">
 <span>🔎</span>
@@ -1590,10 +1551,6 @@ function productCard(product) {
 function renderProducts() {
   const visible = getVisibleProducts();
   els.productsGrid.innerHTML = visible.map(productCard).join("");
-  if (PAGE_MODE === "home" && els.productsGrid.classList.contains("products-carousel")) {
-    els.productsGrid.scrollLeft = 0;
-    requestAnimationFrame(updateProductCarousel);
-  }
   els.emptyState.hidden = visible.length > 0;
   els.productsGrid.hidden = visible.length === 0;
 
@@ -1822,45 +1779,7 @@ function closePolicyDialog() {
   else dialog.removeAttribute("open");
 }
 
-function updateProductCarousel() {
-  const track = document.getElementById("productsGrid");
-  const prev = document.getElementById("productCarouselPrev");
-  const next = document.getElementById("productCarouselNext");
-  const progress = document.getElementById("productCarouselProgress");
-  if (!track || !track.classList.contains("products-carousel")) return;
-
-  const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
-  const current = Math.max(0, Math.min(track.scrollLeft, maxScroll));
-  if (prev) prev.disabled = current <= 4;
-  if (next) next.disabled = maxScroll <= 4 || current >= maxScroll - 4;
-  if (progress) {
-    const ratio = maxScroll <= 4 ? 1 : current / maxScroll;
-    progress.style.width = `${Math.max(14, ratio * 100)}%`;
-  }
-}
-
-function scrollProductCarousel(direction) {
-  const track = document.getElementById("productsGrid");
-  if (!track || !track.classList.contains("products-carousel")) return;
-  const firstCard = track.querySelector(".product-card");
-  const gap = parseFloat(getComputedStyle(track).gap || 0);
-  const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : track.clientWidth * .8;
-  const visibleCards = window.innerWidth > 1050 ? 4 : window.innerWidth > 760 ? 3 : 1;
-  const step = (cardWidth + gap) * Math.max(1, visibleCards - 1);
-  track.scrollBy({ left: direction * step, behavior: "smooth" });
-}
-
 function bindEvents() {
-  const carouselTrack = document.getElementById("productsGrid");
-  const carouselPrev = document.getElementById("productCarouselPrev");
-  const carouselNext = document.getElementById("productCarouselNext");
-  if (carouselPrev) carouselPrev.addEventListener("click", () => scrollProductCarousel(-1));
-  if (carouselNext) carouselNext.addEventListener("click", () => scrollProductCarousel(1));
-  if (carouselTrack?.classList.contains("products-carousel")) {
-    carouselTrack.addEventListener("scroll", updateProductCarousel, { passive: true });
-    window.addEventListener("resize", updateProductCarousel);
-  }
-
   document.addEventListener("click", event => {
     const policyTarget = event.target.closest("[data-policy]");
     if (policyTarget) {
