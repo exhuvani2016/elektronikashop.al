@@ -702,6 +702,48 @@
 .category-card .category-copy{display:block}
 @media(max-width:760px){.category-page-hero{padding:24px 0 8px}.category-page-hero-card{padding:26px 22px;border-radius:20px}.category-page-hero-card h1{font-size:31px}.category-page-hero-card p{font-size:14px}}
 
+
+/* ===== MODERN MEGA MENU ===== */
+.site-header,.premium-nav,.premium-nav-inner{overflow:visible}
+.premium-nav{position:relative;z-index:70}
+.mega-menu-wrap{position:relative;width:252px;min-width:252px;z-index:90}
+.mega-menu-trigger{width:100%;height:46px;border:0;border-radius:14px;padding:0 13px 0 14px;display:flex;align-items:center;gap:11px;background:linear-gradient(135deg,#246bfd 0%,#665cf5 100%);color:#fff;box-shadow:0 9px 22px rgba(49,83,219,.24);transition:transform .18s ease,box-shadow .18s ease;cursor:pointer}
+.mega-menu-trigger:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(49,83,219,.30)}
+.mega-menu-trigger:focus-visible{outline:3px solid rgba(36,107,253,.20);outline-offset:3px}
+.mega-trigger-icon{width:21px;height:21px;display:grid;place-items:center;flex:0 0 auto}
+.mega-trigger-icon svg{width:100%;height:100%;fill:currentColor}
+.mega-trigger-copy{display:flex;flex-direction:column;align-items:flex-start;line-height:1.05;min-width:0}
+.mega-trigger-copy strong{font-size:13.5px;font-weight:900;letter-spacing:.1px}
+.mega-trigger-copy small{font-size:9.5px;font-weight:750;opacity:.78;margin-top:4px}
+.mega-trigger-chevron{width:18px;height:18px;margin-left:auto;transition:transform .2s ease;flex:0 0 auto}
+.mega-trigger-chevron svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+.mega-menu-wrap.is-open .mega-trigger-chevron{transform:rotate(180deg)}
+.mega-menu-panel{position:absolute;top:calc(100% + 10px);left:0;width:min(1030px,calc(100vw - 38px));padding:22px;background:rgba(255,255,255,.98);border:1px solid #dfe6f6;border-radius:22px;box-shadow:0 26px 70px rgba(25,42,88,.20);backdrop-filter:blur(18px);opacity:0;visibility:hidden;transform:translateY(-8px) scale(.985);transform-origin:top left;pointer-events:none;transition:opacity .18s ease,transform .18s ease,visibility .18s ease}
+.mega-menu-wrap.is-open .mega-menu-panel{opacity:1;visibility:visible;transform:translateY(0) scale(1);pointer-events:auto}
+.mega-menu-head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:2px 2px 17px;border-bottom:1px solid #edf0f7}
+.mega-menu-head>div{display:flex;flex-direction:column;gap:3px}
+.mega-menu-head strong{font-size:18px;color:#111b39;letter-spacing:-.3px}
+.mega-menu-head span{font-size:12px;color:#79839b}
+.mega-menu-head>a{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border-radius:10px;background:#f1f5ff;color:#245bd9;font-size:12px;font-weight:850;white-space:nowrap;transition:.18s ease}
+.mega-menu-head>a:hover{background:#e6edff;transform:translateX(2px)}
+.mega-menu-groups{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding-top:18px}
+.mega-group{padding:0 9px 3px;border-right:1px solid #edf0f7}
+.mega-group:last-child{border-right:0}
+.mega-group h3{margin:0 0 9px;padding:0 6px;color:#7c86a0;font-size:9.5px;letter-spacing:1.25px;font-weight:900}
+.mega-item{display:flex;align-items:center;gap:10px;padding:9px 7px;border-radius:12px;transition:background .16s ease,transform .16s ease}
+.mega-item:hover{background:#f4f7ff;transform:translateX(2px)}
+.mega-item.is-active{background:#eef3ff}
+.mega-item-icon{width:37px;height:37px;border-radius:11px;display:grid;place-items:center;flex:0 0 37px;background:linear-gradient(145deg,#edf3ff,#f2edff);color:#315ee4;border:1px solid #e0e8ff;font-size:10px;font-weight:950;letter-spacing:.3px}
+.mega-item>span:last-child{display:flex;flex-direction:column;min-width:0}
+.mega-item strong{font-size:12.5px;color:#18213f;line-height:1.2}
+.mega-item small{margin-top:3px;color:#7a849c;font-size:9.5px;line-height:1.25;white-space:normal}
+.mega-menu-bottom{margin-top:17px;padding:12px 14px;border-radius:14px;background:linear-gradient(90deg,#f5f8ff,#f5f1ff);display:flex;align-items:center;justify-content:space-between;gap:14px;color:#58627a;font-size:11.5px}
+.mega-menu-bottom b{color:#1a2444}
+.mega-menu-bottom a{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 13px;border-radius:10px;background:#18a957;color:#fff;font-size:11px;font-weight:900;white-space:nowrap;box-shadow:0 8px 18px rgba(24,169,87,.18)}
+@media(max-width:1050px){.mega-menu-wrap{width:225px;min-width:225px}.mega-menu-panel{width:min(900px,calc(100vw - 30px))}.mega-menu-groups{grid-template-columns:repeat(2,minmax(0,1fr))}.mega-group:nth-child(2){border-right:0}.mega-group:nth-child(-n+2){padding-bottom:12px;border-bottom:1px solid #edf0f7}.mega-group:nth-child(n+3){padding-top:5px}.mega-group:nth-child(4){border-right:0}}
+@media(max-width:760px){.mega-menu-wrap{width:100%;min-width:0}.mega-menu-trigger{height:50px;border-radius:14px;padding-inline:15px}.mega-trigger-copy strong{font-size:14px}.mega-menu-panel{left:0;top:calc(100% + 8px);width:100%;max-height:70vh;overflow:auto;padding:16px;border-radius:18px}.mega-menu-head{align-items:flex-start}.mega-menu-head>div span{display:none}.mega-menu-head strong{font-size:16px}.mega-menu-head>a{font-size:10.5px;padding:8px 9px}.mega-menu-groups{grid-template-columns:1fr 1fr;gap:8px;padding-top:13px}.mega-group,.mega-group:nth-child(2),.mega-group:nth-child(-n+2),.mega-group:nth-child(n+3){border:0;padding:0}.mega-group h3{font-size:8.5px;margin-bottom:6px}.mega-item{padding:8px 5px;gap:8px}.mega-item-icon{width:32px;height:32px;flex-basis:32px;border-radius:9px;font-size:9px}.mega-item strong{font-size:11px}.mega-item small{display:none}.mega-menu-bottom{margin-top:12px;padding:10px 11px;font-size:10px}.mega-menu-bottom span{max-width:58%}.mega-menu-bottom a{font-size:10px;padding:0 9px}.premium-nav-links,.premium-whatsapp{display:none!important}}
+@media(max-width:430px){.mega-menu-panel{max-height:72vh}.mega-menu-groups{grid-template-columns:1fr}.mega-menu-head>a{font-size:10px}.mega-menu-bottom span{display:none}.mega-menu-bottom a{width:100%}}
+
 </style>
 </head>
 <body>
@@ -752,14 +794,52 @@
 </div>
 <nav aria-label="Menuja kryesore" class="main-nav premium-nav">
 <div class="container nav-inner premium-nav-inner">
-<div class="category-select-shell">
-<span aria-hidden="true" class="category-select-icon">
-<svg viewbox="0 0 24 24"><path d="M4 5h6v6H4V5Zm10 0h6v6h-6V5ZM4 15h6v4H4v-4Zm10 0h6v4h-6v-4Z"></path></svg>
+<div class="mega-menu-wrap" id="megaMenuWrap">
+<button class="mega-menu-trigger" id="megaMenuTrigger" type="button" aria-expanded="false" aria-controls="megaMenuPanel">
+<span class="mega-trigger-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24"><path d="M4 4h6v6H4V4Zm10 0h6v6h-6V4ZM4 14h6v6H4v-6Zm10 0h6v6h-6v-6Z"></path></svg>
 </span>
-<select aria-label="Filtro sipas kategorisë" class="nav-category-filter premium-category-filter" id="categoryFilter"></select>
-<span aria-hidden="true" class="category-select-chevron">
-<svg viewbox="0 0 24 24"><path d="m7 9 5 5 5-5"></path></svg>
-</span>
+<span class="mega-trigger-copy"><strong>Kategoritë</strong><small>14 kategori</small></span>
+<span class="mega-trigger-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7 9 5 5 5-5"></path></svg></span>
+</button>
+<div class="mega-menu-panel" id="megaMenuPanel" aria-hidden="true">
+<div class="mega-menu-head">
+<div><strong>Eksploro kategoritë</strong><span>Zgjidh atë që po kërkon dhe shko direkt te produktet.</span></div>
+<a href="produkte.html">Të gjitha produktet <span aria-hidden="true">→</span></a>
+</div>
+<div class="mega-menu-groups">
+<section class="mega-group" aria-label="Teknologji personale">
+<h3>TEKNOLOGJI PERSONALE</h3>
+<a class="mega-item" href="ora-smart.html" data-mega-page="ora-smart.html"><span class="mega-item-icon">SM</span><span><strong>Ora smart</strong><small>Për të rritur dhe fëmijë</small></span></a>
+<a class="mega-item" href="kufje.html" data-mega-page="kufje.html"><span class="mega-item-icon">KF</span><span><strong>Kufje</strong><small>Bluetooth dhe wireless</small></span></a>
+<a class="mega-item" href="aparate-fotografike.html" data-mega-page="aparate-fotografike.html"><span class="mega-item-icon">FO</span><span><strong>Aparate fotografike</strong><small>Foto dhe video</small></span></a>
+<a class="mega-item" href="drone.html" data-mega-page="drone.html"><span class="mega-item-icon">DR</span><span><strong>Dronë</strong><small>Kamera, GPS dhe smart</small></span></a>
+</section>
+<section class="mega-group" aria-label="Shtëpi dhe rrjet">
+<h3>SHTËPI &amp; RRJET</h3>
+<a class="mega-item" href="kamera.html" data-mega-page="kamera.html"><span class="mega-item-icon">KA</span><span><strong>Kamera sigurie</strong><small>Monitorim për shtëpi e biznes</small></span></a>
+<a class="mega-item" href="pajisje-interneti.html" data-mega-page="pajisje-interneti.html"><span class="mega-item-icon">NET</span><span><strong>Pajisje interneti</strong><small>Wi‑Fi, repeater dhe rrjet</small></span></a>
+<a class="mega-item" href="dekoder-tv.html" data-mega-page="dekoder-tv.html"><span class="mega-item-icon">TV</span><span><strong>Dekoder &amp; TV</strong><small>DVB‑T2 dhe aksesorë</small></span></a>
+<a class="mega-item" href="bokse-muzike.html" data-mega-page="bokse-muzike.html"><span class="mega-item-icon">AU</span><span><strong>Bokse muzike</strong><small>Audio Bluetooth dhe portative</small></span></a>
+</section>
+<section class="mega-group" aria-label="Për biznes">
+<h3>PËR BIZNES</h3>
+<a class="mega-item" href="printera-termike.html" data-mega-page="printera-termike.html"><span class="mega-item-icon">PR</span><span><strong>Printera termikë</strong><small>Printim dhe etiketa</small></span></a>
+<a class="mega-item" href="kasa-lekesh.html" data-mega-page="kasa-lekesh.html"><span class="mega-item-icon">KL</span><span><strong>Kasa lekësh</strong><small>Për POS dhe pika shitjeje</small></span></a>
+<a class="mega-item" href="pajisje-biznesi.html" data-mega-page="pajisje-biznesi.html"><span class="mega-item-icon">BZ</span><span><strong>Pajisje biznesi</strong><small>POS, skanerë dhe peshore</small></span></a>
+</section>
+<section class="mega-group" aria-label="Auto dhe aksesorë">
+<h3>AUTO &amp; AKSESORË</h3>
+<a class="mega-item" href="kasetofona.html" data-mega-page="kasetofona.html"><span class="mega-item-icon">AU</span><span><strong>Kasetofona</strong><small>Android dhe aksesorë makine</small></span></a>
+<a class="mega-item" href="karikues.html" data-mega-page="karikues.html"><span class="mega-item-icon">CH</span><span><strong>Karikues</strong><small>Telefon, laptop dhe elektronikë</small></span></a>
+<a class="mega-item" href="te-tjera.html" data-mega-page="te-tjera.html"><span class="mega-item-icon">+</span><span><strong>Produkte të tjera</strong><small>Aksesorë dhe elektronikë të ndryshme</small></span></a>
+</section>
+</div>
+<div class="mega-menu-bottom">
+<span><b>Porosi e shpejtë?</b> Na shkruaj direkt në WhatsApp.</span>
+<a href="https://wa.me/355692053677" target="_blank" rel="noopener">Porosit në WhatsApp</a>
+</div>
+</div>
 </div>
 <div class="nav-links premium-nav-links" id="navLinks">
 <a href="index.html">Kryefaqja</a>
@@ -1852,5 +1932,26 @@ async function init() {
 init();
 
 </script>
+
+<script>
+(function(){
+  const wrap=document.getElementById('megaMenuWrap');
+  const trigger=document.getElementById('megaMenuTrigger');
+  const panel=document.getElementById('megaMenuPanel');
+  if(!wrap||!trigger||!panel) return;
+  const setOpen=(open)=>{
+    wrap.classList.toggle('is-open',open);
+    trigger.setAttribute('aria-expanded',String(open));
+    panel.setAttribute('aria-hidden',String(!open));
+  };
+  trigger.addEventListener('click',(e)=>{e.stopPropagation();setOpen(!wrap.classList.contains('is-open'));});
+  panel.addEventListener('click',(e)=>e.stopPropagation());
+  document.addEventListener('click',()=>setOpen(false));
+  document.addEventListener('keydown',(e)=>{if(e.key==='Escape'){setOpen(false);trigger.focus();}});
+  const current=(location.pathname.split('/').pop()||'index.html').split('?')[0].split('#')[0];
+  document.querySelectorAll('[data-mega-page]').forEach(link=>{if(link.dataset.megaPage===current) link.classList.add('is-active');});
+})();
+</script>
+
 </body>
 </html>
