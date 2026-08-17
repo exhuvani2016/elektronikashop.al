@@ -744,6 +744,100 @@
 @media(max-width:760px){.mega-menu-wrap{width:100%;min-width:0}.mega-menu-trigger{height:50px;border-radius:14px;padding-inline:15px}.mega-trigger-copy strong{font-size:14px}.mega-menu-panel{left:0;top:calc(100% + 8px);width:100%;max-height:70vh;overflow:auto;padding:16px;border-radius:18px}.mega-menu-head{align-items:flex-start}.mega-menu-head>div span{display:none}.mega-menu-head strong{font-size:16px}.mega-menu-head>a{font-size:10.5px;padding:8px 9px}.mega-menu-groups{grid-template-columns:1fr 1fr;gap:8px;padding-top:13px}.mega-group,.mega-group:nth-child(2),.mega-group:nth-child(-n+2),.mega-group:nth-child(n+3){border:0;padding:0}.mega-group h3{font-size:8.5px;margin-bottom:6px}.mega-item{padding:8px 5px;gap:8px}.mega-item-icon{width:32px;height:32px;flex-basis:32px;border-radius:9px;font-size:9px}.mega-item strong{font-size:11px}.mega-item small{display:none}.mega-menu-bottom{margin-top:12px;padding:10px 11px;font-size:10px}.mega-menu-bottom span{max-width:58%}.mega-menu-bottom a{font-size:10px;padding:0 9px}.premium-nav-links,.premium-whatsapp{display:none!important}}
 @media(max-width:430px){.mega-menu-panel{max-height:72vh}.mega-menu-groups{grid-template-columns:1fr}.mega-menu-head>a{font-size:10px}.mega-menu-bottom span{display:none}.mega-menu-bottom a{width:100%}}
 
+
+/* ===== Live product search ===== */
+.premium-search{overflow:visible;z-index:70}
+.premium-search>button{border-radius:0 13px 13px 0}
+.live-search-panel{
+  position:absolute;
+  top:calc(100% + 9px);
+  left:0;
+  width:100%;
+  max-height:min(520px,70vh);
+  overflow:auto;
+  background:#fff;
+  border:1px solid #e1e7f3;
+  border-radius:18px;
+  box-shadow:0 24px 65px rgba(25,42,88,.18);
+  z-index:120;
+  padding:8px;
+  text-align:left;
+}
+.live-search-panel[hidden]{display:none!important}
+.live-search-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:8px 10px 7px;
+  color:#7a849c;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:1.1px;
+  text-transform:uppercase;
+}
+.live-search-head span:last-child{letter-spacing:0;text-transform:none;font-weight:750;color:#9aa3b6}
+.live-search-item{
+  width:100%;
+  border:0;
+  background:#fff;
+  border-radius:13px;
+  padding:9px;
+  display:grid;
+  grid-template-columns:58px minmax(0,1fr) auto;
+  align-items:center;
+  gap:12px;
+  text-align:left;
+  color:var(--text);
+  transition:.16s ease;
+}
+.live-search-item:hover,.live-search-item.is-active{background:#f3f6ff;transform:translateY(-1px)}
+.live-search-thumb{
+  width:58px;
+  height:58px;
+  border-radius:11px;
+  background:linear-gradient(145deg,#fff,#f2f5ff);
+  border:1px solid #edf0f8;
+  overflow:hidden;
+  display:grid;
+  place-items:center;
+}
+.live-search-thumb img{width:100%;height:100%;object-fit:contain;padding:5px}
+.live-search-copy{min-width:0}
+.live-search-copy strong{display:block;font-size:13px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.live-search-copy small{display:block;margin-top:4px;color:#7b849a;font-size:10.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.live-search-price{font-size:12.5px;font-weight:900;color:#235bd9;white-space:nowrap}
+.live-search-footer{
+  width:100%;
+  margin-top:5px;
+  min-height:42px;
+  border:0;
+  border-top:1px solid #edf0f7;
+  background:#fff;
+  color:#245ee8;
+  font-size:12px;
+  font-weight:900;
+  border-radius:0 0 12px 12px;
+}
+.live-search-footer:hover{background:#f7f9ff}
+.live-search-empty{padding:22px 14px;text-align:center}
+.live-search-empty strong{display:block;font-size:13px}
+.live-search-empty small{display:block;margin-top:4px;color:#7b849a;font-size:11px}
+@media(max-width:760px){
+  .premium-search{z-index:90}
+  .live-search-panel{top:calc(100% + 7px);max-height:58vh;border-radius:15px;padding:6px}
+  .live-search-item{grid-template-columns:50px minmax(0,1fr) auto;gap:9px;padding:8px 7px}
+  .live-search-thumb{width:50px;height:50px}
+  .live-search-copy strong{font-size:12px}
+  .live-search-copy small{font-size:9.5px}
+  .live-search-price{font-size:11px}
+}
+@media(max-width:430px){
+  .live-search-item{grid-template-columns:48px minmax(0,1fr)}
+  .live-search-thumb{width:48px;height:48px}
+  .live-search-price{grid-column:2;justify-self:start;margin-top:-4px}
+}
+
 </style>
 </head>
 <body>
@@ -767,6 +861,7 @@
 <button aria-label="Kërko" type="submit">
 <svg aria-hidden="true" viewbox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"></path></svg>
 </button>
+<div class="live-search-panel" id="liveSearchPanel" role="listbox" aria-label="Sugjerime kërkimi" hidden></div>
 </form>
 <div aria-label="Kontakt i shpejtë" class="mobile-contact-actions">
 <a aria-label="Na telefono në 069 205 3677" class="mobile-phone-action" href="tel:+355692053677">
@@ -1395,6 +1490,7 @@ const els = {
   resetFilters: document.getElementById("resetFilters"),
   headerSearch: document.getElementById("headerSearch"),
   headerSearchForm: document.getElementById("headerSearchForm"),
+  liveSearchPanel: document.getElementById("liveSearchPanel"),
   cartDrawer: document.getElementById("cartDrawer"),
   openCart: document.getElementById("openCart"),
   closeCart: document.getElementById("closeCart"),
@@ -1779,6 +1875,128 @@ function closePolicyDialog() {
   else dialog.removeAttribute("open");
 }
 
+
+let liveSearchActiveIndex = -1;
+
+function normalizeSearch(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLocaleLowerCase("sq")
+    .trim();
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
+  }[char]));
+}
+
+function searchAllProducts(query, limit = 5) {
+  const q = normalizeSearch(query);
+  if (q.length < 2) return [];
+
+  return products
+    .map(product => {
+      const name = normalizeSearch(product.name);
+      const category = normalizeSearch(canonicalCategory(product));
+      const description = normalizeSearch(product.description);
+      const features = normalizeSearch((product.features || []).join(" "));
+      const haystack = `${name} ${category} ${description} ${features}`;
+      if (!haystack.includes(q)) return null;
+
+      let score = 0;
+      if (name === q) score += 100;
+      else if (name.startsWith(q)) score += 70;
+      else if (name.includes(q)) score += 45;
+      if (category.startsWith(q)) score += 25;
+      else if (category.includes(q)) score += 15;
+      if (product.featured) score += 3;
+      return { product, score };
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.score - a.score || a.product.name.localeCompare(b.product.name, "sq"))
+    .slice(0, limit)
+    .map(entry => entry.product);
+}
+
+function closeLiveSearch() {
+  if (!els.liveSearchPanel) return;
+  els.liveSearchPanel.hidden = true;
+  els.liveSearchPanel.innerHTML = "";
+  liveSearchActiveIndex = -1;
+  els.headerSearch?.setAttribute("aria-expanded", "false");
+}
+
+function renderLiveSearch(query) {
+  if (!els.liveSearchPanel) return;
+  const cleanQuery = String(query || "").trim();
+  if (normalizeSearch(cleanQuery).length < 2) {
+    closeLiveSearch();
+    return;
+  }
+
+  const matches = searchAllProducts(cleanQuery, 5);
+  liveSearchActiveIndex = -1;
+
+  if (!matches.length) {
+    els.liveSearchPanel.innerHTML = `
+      <div class="live-search-empty">
+        <strong>Nuk u gjet asnjë produkt</strong>
+        <small>Provo një emër, markë ose kategori tjetër.</small>
+      </div>`;
+  } else {
+    els.liveSearchPanel.innerHTML = `
+      <div class="live-search-head"><span>Sugjerime</span><span>${matches.length} rezultate</span></div>
+      ${matches.map(product => `
+        <button class="live-search-item" type="button" role="option" data-live-product="${product.id}">
+          <span class="live-search-thumb"><img src="${escapeHtml(product.image)}" alt="" loading="lazy"></span>
+          <span class="live-search-copy">
+            <strong>${escapeHtml(product.name)}</strong>
+            <small>${escapeHtml(canonicalCategory(product))}</small>
+          </span>
+          <span class="live-search-price">${escapeHtml(formatPrice(product.price))}</span>
+        </button>`).join("")}
+      <button class="live-search-footer" type="button" data-live-all>Shiko të gjitha rezultatet →</button>`;
+  }
+
+  els.liveSearchPanel.hidden = false;
+  els.headerSearch?.setAttribute("aria-expanded", "true");
+}
+
+function goToSearchResults(query) {
+  const cleanQuery = String(query || "").trim();
+  if (!cleanQuery) return;
+  closeLiveSearch();
+
+  if (PAGE_FILE === "produkte.html") {
+    state.category = "Të gjitha";
+    state.search = cleanQuery;
+    if (els.headerSearch) els.headerSearch.value = cleanQuery;
+    renderProducts();
+    document.getElementById("products")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const url = new URL(window.location.href);
+    url.searchParams.set("q", cleanQuery);
+    history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+    return;
+  }
+
+  window.location.href = `produkte.html?q=${encodeURIComponent(cleanQuery)}`;
+}
+
+function updateLiveSearchKeyboard(direction) {
+  if (!els.liveSearchPanel || els.liveSearchPanel.hidden) return false;
+  const items = [...els.liveSearchPanel.querySelectorAll("[data-live-product]")];
+  if (!items.length) return false;
+
+  items.forEach(item => item.classList.remove("is-active"));
+  if (direction === "down") liveSearchActiveIndex = (liveSearchActiveIndex + 1) % items.length;
+  if (direction === "up") liveSearchActiveIndex = (liveSearchActiveIndex - 1 + items.length) % items.length;
+  items[liveSearchActiveIndex].classList.add("is-active");
+  items[liveSearchActiveIndex].scrollIntoView({ block: "nearest" });
+  return true;
+}
+
 function bindEvents() {
   document.addEventListener("click", event => {
     const policyTarget = event.target.closest("[data-policy]");
@@ -1830,15 +2048,55 @@ function bindEvents() {
   if (els.sortProducts) els.sortProducts.addEventListener("change", event => { state.sort = event.target.value; renderProducts(); });
   els.headerSearchForm.addEventListener("submit", event => {
     event.preventDefault();
-    state.search = els.headerSearch.value.trim();
-    renderProducts();
-    document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+    if (liveSearchActiveIndex >= 0 && els.liveSearchPanel && !els.liveSearchPanel.hidden) {
+      const activeItem = els.liveSearchPanel.querySelectorAll("[data-live-product]")[liveSearchActiveIndex];
+      if (activeItem) {
+        closeLiveSearch();
+        openProductModal(Number(activeItem.dataset.liveProduct));
+        return;
+      }
+    }
+    goToSearchResults(els.headerSearch.value);
   });
+
+  els.headerSearch.setAttribute("autocomplete", "off");
+  els.headerSearch.setAttribute("aria-autocomplete", "list");
+  els.headerSearch.setAttribute("aria-controls", "liveSearchPanel");
+  els.headerSearch.setAttribute("aria-expanded", "false");
+
   els.headerSearch.addEventListener("input", event => {
-    if (!event.target.value.trim()) {
+    const value = event.target.value;
+    renderLiveSearch(value);
+    if (!value.trim() && PAGE_FILE === "produkte.html" && state.search) {
       state.search = "";
       renderProducts();
+      const url = new URL(window.location.href);
+      url.searchParams.delete("q");
+      history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
     }
+  });
+
+  els.headerSearch.addEventListener("focus", event => renderLiveSearch(event.target.value));
+  els.headerSearch.addEventListener("keydown", event => {
+    if (event.key === "ArrowDown" && updateLiveSearchKeyboard("down")) event.preventDefault();
+    if (event.key === "ArrowUp" && updateLiveSearchKeyboard("up")) event.preventDefault();
+    if (event.key === "Escape") closeLiveSearch();
+  });
+
+  if (els.liveSearchPanel) {
+    els.liveSearchPanel.addEventListener("click", event => {
+      const productTarget = event.target.closest("[data-live-product]");
+      if (productTarget) {
+        closeLiveSearch();
+        openProductModal(Number(productTarget.dataset.liveProduct));
+        return;
+      }
+      if (event.target.closest("[data-live-all]")) goToSearchResults(els.headerSearch.value);
+    });
+  }
+
+  document.addEventListener("click", event => {
+    if (!event.target.closest("#headerSearchForm")) closeLiveSearch();
   });
 
   if (els.resetFilters) els.resetFilters.addEventListener("click", resetFilters);
@@ -1969,6 +2227,12 @@ async function init() {
 
   await loadCmsProducts();
   state.category = PAGE_CATEGORY || "Të gjitha";
+
+  const initialSearch = new URLSearchParams(window.location.search).get("q");
+  if (initialSearch) {
+    state.search = initialSearch.trim();
+    if (els.headerSearch) els.headerSearch.value = state.search;
+  }
 
   const productCountStat = document.getElementById("productCountStat");
   if (productCountStat) productCountStat.textContent = `${products.length}+`;
