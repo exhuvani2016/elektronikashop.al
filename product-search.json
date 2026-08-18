@@ -1,0 +1,674 @@
+[
+  {
+    "name": "Kamerë me Panel Diellor T64",
+    "category": "Kamera",
+    "price": 7500,
+    "image": "https://static.wixstatic.com/media/ba81de_98b99d8a4f5f40a9a2dfb268c6f34af3~mv2.png/v1/fill/w_1119%2Ch_1405%2Cal_c%2Cq_90%2Cenc_avif%2Cquality_auto/ba81de_98b99d8a4f5f40a9a2dfb268c6f34af3~mv2.png",
+    "url": "produkt-kamere-me-panel-diellor-t64.html"
+  },
+  {
+    "name": "Kamerë XO Rrotulluese CR04",
+    "category": "Kamera",
+    "price": 5000,
+    "image": "https://static.wixstatic.com/media/ba81de_b33ece4ace314529aa01c3eef728ebdc~mv2.png/v1/fill/w_550%2Ch_550%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_b33ece4ace314529aa01c3eef728ebdc~mv2.png",
+    "url": "produkt-kamere-xo-rrotulluese-cr04.html"
+  },
+  {
+    "name": "Kasë Lekësh 37×34 cm",
+    "category": "Kasa lekësh",
+    "price": 4500,
+    "image": "https://static.wixstatic.com/media/ba81de_68c5d48572f942cd9f32833abf4094b2~mv2.webp/v1/fill/w_800%2Ch_800%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_68c5d48572f942cd9f32833abf4094b2~mv2.webp",
+    "url": "produkt-kase-lekesh-3734-cm.html"
+  },
+  {
+    "name": "Kasë Lekësh 42×40 cm",
+    "category": "Kasa lekësh",
+    "price": 5500,
+    "image": "https://static.wixstatic.com/media/ba81de_86d3bfadfa694656983a2d3be0a1199b~mv2.png/v1/fill/w_941%2Ch_1672%2Cal_c%2Cq_90%2Cenc_avif%2Cquality_auto/ba81de_86d3bfadfa694656983a2d3be0a1199b~mv2.png",
+    "url": "produkt-kase-lekesh-4240-cm.html"
+  },
+  {
+    "name": "Dron S28 GPS",
+    "category": "Dronë",
+    "price": 7500,
+    "image": "https://static.wixstatic.com/media/ba81de_ce857e813088433c8ce19df68d5a10a6~mv2.jpg/v1/fill/w_750%2Ch_717%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_ce857e813088433c8ce19df68d5a10a6~mv2.jpg",
+    "url": "produkt-dron-s28-gps.html"
+  },
+  {
+    "name": "Kufje Bluetooth XO",
+    "category": "Kufje",
+    "price": 2500,
+    "image": "https://static.wixstatic.com/media/ba81de_306de6ef8fc848cc9b95ad6d81041b48~mv2.png/v1/fill/w_977%2Ch_686%2Cal_c%2Cq_90%2Cenc_avif%2Cquality_auto/ba81de_306de6ef8fc848cc9b95ad6d81041b48~mv2.png",
+    "url": "produkt-kufje-bluetooth-xo.html"
+  },
+  {
+    "name": "Telefon Land Rover Q4000",
+    "category": "Të tjera",
+    "price": 4000,
+    "image": "https://static.wixstatic.com/media/ba81de_1650315ad0da4e7781e1c7d427d8bff9~mv2.jpg/v1/fill/w_500%2Ch_500%2Cal_c%2Cq_80%2Cenc_avif%2Cquality_auto/ba81de_1650315ad0da4e7781e1c7d427d8bff9~mv2.jpg",
+    "url": "produkt-telefon-land-rover-q4000.html"
+  },
+  {
+    "name": "Kamerë Xiaomi me 2 Lente",
+    "category": "Kamera",
+    "price": 7500,
+    "image": "https://static.wixstatic.com/media/ba81de_69332cd39b8c481b971d676dfdc36201~mv2.jpg/v1/fill/w_1000%2Ch_1000%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_69332cd39b8c481b971d676dfdc36201~mv2.jpg",
+    "url": "produkt-kamere-xiaomi-me-2-lente.html"
+  },
+  {
+    "name": "Smartwatch Ultra 2",
+    "category": "Ora smart",
+    "price": 2500,
+    "image": "https://static.wixstatic.com/media/ba81de_01af450b8b29460b826b35913e20d758~mv2.jpg/v1/fill/w_800%2Ch_800%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_01af450b8b29460b826b35913e20d758~mv2.jpg",
+    "url": "produkt-smartwatch-ultra-2.html"
+  },
+  {
+    "name": "Mini Printer Termik",
+    "category": "Printera termikë",
+    "price": 4200,
+    "image": "https://static.wixstatic.com/media/ba81de_f9323f3ef216402cba578dee91dbd56d~mv2.jpg/v1/fill/w_1000%2Ch_1000%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_f9323f3ef216402cba578dee91dbd56d~mv2.jpg",
+    "url": "produkt-mini-printer-termik.html"
+  },
+  {
+    "name": "Printer Termik 80 mm",
+    "category": "Printera termikë",
+    "price": 6500,
+    "image": "https://static.wixstatic.com/media/ba81de_9456d2b1ebd34de5b6959b4951f3a3ae~mv2.avif/v1/fill/w_1000%2Ch_1000%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_9456d2b1ebd34de5b6959b4951f3a3ae~mv2.avif",
+    "url": "produkt-printer-termik-80-mm.html"
+  },
+  {
+    "name": "Ora Smart Seria 8 Ultra",
+    "category": "Ora smart",
+    "price": 3500,
+    "image": "https://static.wixstatic.com/media/ba81de_e8b8af5e617e4208a3509f99167c90e8~mv2.jpg/v1/fill/w_1412%2Ch_1684%2Cal_c%2Cq_90%2Cenc_avif%2Cquality_auto/ba81de_e8b8af5e617e4208a3509f99167c90e8~mv2.jpg",
+    "url": "produkt-ora-smart-seria-8-ultra.html"
+  },
+  {
+    "name": "Ora Smart X8 Ultra",
+    "category": "Ora smart",
+    "price": 3000,
+    "image": "https://static.wixstatic.com/media/ba81de_dcbf75c43bf542cdaa13c0357c9e4f71~mv2.jpg/v1/fill/w_843%2Ch_825%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_dcbf75c43bf542cdaa13c0357c9e4f71~mv2.jpg",
+    "url": "produkt-ora-smart-x8-ultra.html"
+  },
+  {
+    "name": "Ora Smart Seria 8",
+    "category": "Ora smart",
+    "price": 2800,
+    "image": "https://static.wixstatic.com/media/ba81de_05323b51816e49b395042ada7e511e87~mv2.jpg/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/ba81de_05323b51816e49b395042ada7e511e87~mv2.jpg",
+    "url": "produkt-ora-smart-seria-8.html"
+  },
+  {
+    "name": "Tablet Shkrimi Xiaomi për Fëmijë",
+    "category": "Të tjera",
+    "price": 3000,
+    "image": "https://static.wixstatic.com/media/ba81de_6038d82041a94467a5fa2f41f0ae7f9d~mv2.jpg/v1/fill/w_800%2Ch_800%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_6038d82041a94467a5fa2f41f0ae7f9d~mv2.jpg",
+    "url": "produkt-tablet-shkrimi-xiaomi-per-femije.html"
+  },
+  {
+    "name": "Boks KTS-1193 me Mikrofon",
+    "category": "Të tjera",
+    "price": 4700,
+    "image": "https://static.wixstatic.com/media/ba81de_9e7889dd395d456ab7901369f52c00b1~mv2.jpg/v1/fill/w_1280%2Ch_1033%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_9e7889dd395d456ab7901369f52c00b1~mv2.jpg",
+    "url": "produkt-boks-kts-1193-me-mikrofon.html"
+  },
+  {
+    "name": "Kamerë Xiaomi 2K",
+    "category": "Kamera",
+    "price": 5500,
+    "image": "https://static.wixstatic.com/media/ba81de_bb06d5543fa547c2b1d68abc5e914e07~mv2.jpg/v1/fill/w_780%2Ch_405%2Cal_c%2Cq_80%2Cenc_avif%2Cquality_auto/ba81de_bb06d5543fa547c2b1d68abc5e914e07~mv2.jpg",
+    "url": "produkt-kamere-xiaomi-2k.html"
+  },
+  {
+    "name": "Boks Bluetooth KTS me Mikrofon",
+    "category": "Të tjera",
+    "price": 3000,
+    "image": "https://static.wixstatic.com/media/ba81de_b514596990054d88b2816034cc9ef256~mv2.jpg/v1/fill/w_1408%2Ch_1436%2Cal_c%2Cq_90%2Cenc_avif%2Cquality_auto/ba81de_b514596990054d88b2816034cc9ef256~mv2.jpg",
+    "url": "produkt-boks-bluetooth-kts-me-mikrofon.html"
+  },
+  {
+    "name": "Dekoder Tokësor dhe Satelitor",
+    "category": "Dekoder dhe aksesor TV",
+    "price": 2700,
+    "image": "https://static.wixstatic.com/media/ba81de_884340bcf9b0483eb74e9054a076ab5a~mv2.jpg/v1/fill/w_720%2Ch_720%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_884340bcf9b0483eb74e9054a076ab5a~mv2.jpg",
+    "url": "produkt-dekoder-tokesor-dhe-satelitor.html"
+  },
+  {
+    "name": "DEKODER DVB T2",
+    "category": "Të tjera",
+    "price": 2000.0,
+    "image": "/images/763080603_1068461815556873_5363310872944711216_n.jpg",
+    "url": "produkt-dekoder-dvb-t2.html"
+  },
+  {
+    "name": "MP3 Makine Bluetooth",
+    "category": "Kasetofona",
+    "price": 1000,
+    "image": "https://static.wixstatic.com/media/ba81de_4953a030be1b4947ab61f878b45e98a3~mv2.jpg/v1/fill/w_800%2Ch_800%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_4953a030be1b4947ab61f878b45e98a3~mv2.jpg",
+    "url": "produkt-mp3-makine-bluetooth.html"
+  },
+  {
+    "name": "Kasetofon Universal 7 inç",
+    "category": "Kasetofona",
+    "price": 6500,
+    "image": "https://static.wixstatic.com/media/ba81de_eecde3cca8a2452487d2b333e0d88e8a~mv2.jpg/v1/fill/w_960%2Ch_931%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/ba81de_eecde3cca8a2452487d2b333e0d88e8a~mv2.jpg",
+    "url": "produkt-kasetofon-universal-7-inc.html"
+  },
+  {
+    "name": "2 MIKROFONA WIRELESS",
+    "category": "Bokse muzike",
+    "price": 2500.0,
+    "image": "/images/755297006_1062308386172216_7512382442241022221_n.jpg",
+    "url": "produkt-2-mikrofona-wireless.html"
+  },
+  {
+    "name": "Baby Monitor SM32 – Qetësi për prindërit, siguri për bebin",
+    "category": "Kamera",
+    "price": 5500.0,
+    "image": "/images/655609787_958554729880916_7844183507227909339_n.jpg",
+    "url": "produkt-baby-monitor-sm32-qetesi-per-prinderit-siguri-per-bebin.html"
+  },
+  {
+    "name": "Barkod skaner",
+    "category": "Pajisje për biznese",
+    "price": 7500.0,
+    "image": "/images/720278023_1022014303534958_4917374526493502071_n.jpg",
+    "url": "produkt-barkod-skaner-1.html"
+  },
+  {
+    "name": "Barkod skaner",
+    "category": "Pajisje për biznese",
+    "price": 7500.0,
+    "image": "/images/727904398_1031878019215253_1210452528086604626_n.jpg",
+    "url": "produkt-barkod-skaner.html"
+  },
+  {
+    "name": "Boks me 2 mikrofona",
+    "category": "Bokse muzike",
+    "price": 5000.0,
+    "image": "/images/706197716_1006677965068592_3049369584481676492_n.jpg",
+    "url": "produkt-boks-me-2-mikrofona.html"
+  },
+  {
+    "name": "Boks Moxom 150 wat,super cilesi degjimi",
+    "category": "Bokse muzike",
+    "price": 9000.0,
+    "image": "/images/736074108_1040362485033473_911789890192741805_n.jpg",
+    "url": "produkt-boks-moxom-150-watsuper-cilesi-degjimi.html"
+  },
+  {
+    "name": "BOKS MUZIKE + MIKROFON",
+    "category": "Bokse muzike",
+    "price": 4500.0,
+    "image": "/images/758488364_1063420059394382_8508960931379167141_n.jpg",
+    "url": "produkt-boks-muzike-mikrofon-1.html"
+  },
+  {
+    "name": "Boks muzike + mikrofon",
+    "category": "Bokse muzike",
+    "price": 4000.0,
+    "image": "/images/758691047_1063423749394013_4388368421743231498_n.jpg",
+    "url": "produkt-boks-muzike-mikrofon.html"
+  },
+  {
+    "name": "Boks muzike Ndr 515",
+    "category": "Bokse muzike",
+    "price": 20000.0,
+    "image": "/images/691730564_997438302659225_3041212788211841655_n.jpg",
+    "url": "produkt-boks-muzike-ndr-515.html"
+  },
+  {
+    "name": "Boks muzike",
+    "category": "Bokse muzike",
+    "price": 3000.0,
+    "image": "/images/661357523_968142818922107_3123724518233698739_n.jpg",
+    "url": "produkt-boks-muzike.html"
+  },
+  {
+    "name": "Boks portabel Earldom",
+    "category": "Bokse muzike",
+    "price": 3000.0,
+    "image": "/images/721248680_1022859083450480_2716903094070908314_n.jpg",
+    "url": "produkt-boks-portabel-earldom.html"
+  },
+  {
+    "name": "Boks portabel me bluetooth",
+    "category": "Bokse muzike",
+    "price": 2500.0,
+    "image": "/images/696988151_998283612574694_6148997925229212407_n.jpg",
+    "url": "produkt-boks-portabel-me-bluetooth.html"
+  },
+  {
+    "name": "Bokse per makine Pioneer",
+    "category": "Kasetofona",
+    "price": 4000.0,
+    "image": "/images/710742269_1016753580727697_4526866511186616546_n.jpg",
+    "url": "produkt-bokse-per-makine-pioneer.html"
+  },
+  {
+    "name": "Dash Cam per makine,me 4 kamera",
+    "category": "Kasetofona",
+    "price": 4200.0,
+    "image": "/images/743467735_1050407234028998_3843977485173870524_n.jpg",
+    "url": "produkt-dash-cam-per-makineme-4-kamera.html"
+  },
+  {
+    "name": "DJI MINI 5 PRO",
+    "category": "Dronë",
+    "price": 100.0,
+    "image": "/images/758750956_1064549415948113_7376707639808013426_n.jpg",
+    "url": "produkt-dji-mini-5-pro.html"
+  },
+  {
+    "name": "DRITA LED 10 METRA",
+    "category": "Të tjera",
+    "price": 2000.0,
+    "image": "/images/761574991_1066528762416845_6686242552127125271_n.jpg",
+    "url": "produkt-drita-led-10-metra.html"
+  },
+  {
+    "name": "🚁 Dron S102 Max GPS",
+    "category": "Dronë",
+    "price": 9000.0,
+    "image": "/images/763193716_1068316025571452_8307665963423088181_n.jpg",
+    "url": "produkt-dron-s102-max-gps.html"
+  },
+  {
+    "name": "Dylbi Roof Prism Binocular",
+    "category": "Të tjera",
+    "price": 2500.0,
+    "image": "/images/658798234_961819789554410_3015854673891904065_n.jpg",
+    "url": "produkt-dylbi-roof-prism-binocular.html"
+  },
+  {
+    "name": "Etiketa ngjitese per printer",
+    "category": "Printera termikë",
+    "price": 500.0,
+    "image": "/images/680394461_986081960461526_4616970409917789108_n.jpg",
+    "url": "produkt-etiketa-ngjitese-per-printer.html"
+  },
+  {
+    "name": "F10 Pro Gimbal 🎥",
+    "category": "Kamera",
+    "price": 7000.0,
+    "image": "/images/653476462_955988496804206_5550128648233306551_n.jpg",
+    "url": "produkt-f10-pro-gimbal.html"
+  },
+  {
+    "name": "💢Fshese makine me vakum",
+    "category": "Kasetofona",
+    "price": 2000.0,
+    "image": "/images/759655533_1063188419417546_3648953028602448540_n.jpg",
+    "url": "produkt-fshese-makine-me-vakum.html"
+  },
+  {
+    "name": "📡 Funksion: Wi-Fi repeater / extender (zgjatës sinjali) � Pix-Link",
+    "category": "Pajisje interneti",
+    "price": 2000.0,
+    "image": "/images/619261230_912409301162126_5195060573590518086_n.jpg",
+    "url": "produkt-funksion-wi-fi-repeater-extender-zgjates-sinjali-pix-link.html"
+  },
+  {
+    "name": "GAMING MONITOR",
+    "category": "Të tjera",
+    "price": 24000.0,
+    "image": "/images/763065148_1068759155527139_2131627114930772295_n.jpg",
+    "url": "produkt-gaming-monitor.html"
+  },
+  {
+    "name": "Hardisk i jashtem 1 Terrabyte Toshiba",
+    "category": "Të tjera",
+    "price": 9500.0,
+    "image": "/images/740880920_1045467964522925_3357103429576903118_n.jpg",
+    "url": "produkt-hardisk-i-jashtem-1-terrabyte-toshiba.html"
+  },
+  {
+    "name": "Kabell Lan cat5 upt",
+    "category": "Të tjera",
+    "price": 6000.0,
+    "image": "/images/703844549_1004133571989698_8990436670464949137_n.jpg",
+    "url": "produkt-kabell-lan-cat5-upt.html"
+  },
+  {
+    "name": "Kabell Lan Ftp 305 metra",
+    "category": "Të tjera",
+    "price": 7000.0,
+    "image": "/images/704188000_1004135975322791_8635902324464488798_n.jpg",
+    "url": "produkt-kabell-lan-ftp-305-metra.html"
+  },
+  {
+    "name": "Kabell per bokse 100 metra",
+    "category": "Të tjera",
+    "price": 4500.0,
+    "image": "/images/702545578_1004152451987810_7444318414739933906_n.jpg",
+    "url": "produkt-kabell-per-bokse-100-metra.html"
+  },
+  {
+    "name": "Kamera Sony ZV-1F",
+    "category": "Aparate fotografike",
+    "price": 5200.0,
+    "image": "/images/742642489_1048350927567962_8395150678141230016_n.jpg",
+    "url": "produkt-kamera-sony-zv-1f.html"
+  },
+  {
+    "name": "Kasaforte lekesh",
+    "category": "Pajisje për biznese",
+    "price": 7500.0,
+    "image": "/images/756526369_1060686209667767_6114865474621716759_n.jpg",
+    "url": "produkt-kasaforte-lekesh.html"
+  },
+  {
+    "name": "Kasaforte per celesa per Airbnb",
+    "category": "Pajisje për biznese",
+    "price": 1200.0,
+    "image": "/images/616193238_908117688257954_538677346919540040_n.jpg",
+    "url": "produkt-kasaforte-per-celesa-per-airbnb.html"
+  },
+  {
+    "name": "KASE LEKESH 42X40 CM",
+    "category": "Kasa lekësh",
+    "price": 5000.0,
+    "image": "/images/755808252_1060167483052973_8427495394954406320_n.jpg",
+    "url": "produkt-kase-lekesh-42x40-cm.html"
+  },
+  {
+    "name": "KASE LEKESH ME PERMASA 37X33 CM",
+    "category": "Kasa lekësh",
+    "price": 4500.0,
+    "image": "/images/749878538_1055180720218316_7123972941783241440_n.jpg",
+    "url": "produkt-kase-lekesh-me-permasa-37x33-cm.html"
+  },
+  {
+    "name": "KASE LEKESH",
+    "category": "Kasa lekësh",
+    "price": 5000.0,
+    "image": "/images/752631941_1057470443322677_1522480696203390523_n.jpg",
+    "url": "produkt-kase-lekesh.html"
+  },
+  {
+    "name": "Kasetofon android per C class,Vito,Vaneo,Clk",
+    "category": "Kasetofona",
+    "price": 11500.0,
+    "image": "/images/759349028_1064053579331030_3103439241247065391_n.jpg",
+    "url": "produkt-kasetofon-android-per-c-classvitovaneoclk.html"
+  },
+  {
+    "name": "Kasetofon android per Ford Focus,S-Max,Mondeo,C-Max,Kuga",
+    "category": "Kasetofona",
+    "price": 9500.0,
+    "image": "/images/684154780_987946580275064_4460521017428817449_n.jpg",
+    "url": "produkt-kasetofon-android-per-ford-focuss-maxmondeoc-maxkuga.html"
+  },
+  {
+    "name": "Kasetofon android per golf 7",
+    "category": "Kasetofona",
+    "price": 10000.0,
+    "image": "/images/727658914_1030232242713164_1984896663176555787_n.jpg",
+    "url": "produkt-kasetofon-android-per-golf-7.html"
+  },
+  {
+    "name": "Kasetofon Android për VW Golf 5 / Golf 6",
+    "category": "Kasetofona",
+    "price": 9000.0,
+    "image": "/images/759955115_1064054955997559_5028410417967175563_n.jpg",
+    "url": "produkt-kasetofon-android-per-vw-golf-5-golf-6.html"
+  },
+  {
+    "name": "Kasetofon universal android me hapje",
+    "category": "Kasetofona",
+    "price": 12000.0,
+    "image": "/images/671438124_976279241441798_4751227465578563288_n.jpg",
+    "url": "produkt-kasetofon-universal-android-me-hapje.html"
+  },
+  {
+    "name": "Kasetofon universal android",
+    "category": "Kasetofona",
+    "price": 7500.0,
+    "image": "/images/685990817_990167686719620_1051795972122100207_n.jpg",
+    "url": "produkt-kasetofon-universal-android.html"
+  },
+  {
+    "name": "KASETOFON UNIVERSAL MP5",
+    "category": "Kasetofona",
+    "price": 3500.0,
+    "image": "/images/762937620_1066064149129973_972125722063589502_n.jpg",
+    "url": "produkt-kasetofon-universal-mp5.html"
+  },
+  {
+    "name": "Koke karikuesi Macbook 96w,87w,61 wat Nr.0692053677 #elektronikashop #elektronike #elektronikashopal #karikuesmacbook #macbook",
+    "category": "Karikues",
+    "price": 0.0,
+    "image": "/images/625330348_918795673856822_6704034412795687222_n.jpg",
+    "url": "produkt-koke-karikuesi-macbook-96w87w61-wat-nr0692053677-elektronikashop-elektronike-elektronikashopal-karikuesmacbook-macbook.html"
+  },
+  {
+    "name": "KOMPJUTER POS PER BARE,RESTAURANTE",
+    "category": "Pajisje për biznese",
+    "price": 34000.0,
+    "image": "/images/757331335_1059888093080912_1693830736124822778_n.jpg",
+    "url": "produkt-kompjuter-pos-per-barerestaurante.html"
+  },
+  {
+    "name": "Leter printer 80 mm",
+    "category": "Printera termikë",
+    "price": 900.0,
+    "image": "/images/754825101_1060169143052807_4475837745141106697_n.jpg",
+    "url": "produkt-leter-printer-80-mm.html"
+  },
+  {
+    "name": "LETER PRINTERI 58 MM",
+    "category": "Printera termikë",
+    "price": 600.0,
+    "image": "/images/754462950_1060169179719470_4399647582828504281_n.jpg",
+    "url": "produkt-leter-printeri-58-mm.html"
+  },
+  {
+    "name": "Mikrofon Dji mini",
+    "category": "Kufje",
+    "price": 9500.0,
+    "image": "/images/730511609_1036249402111448_7790395538217395221_n.jpg",
+    "url": "produkt-mikrofon-dji-mini.html"
+  },
+  {
+    "name": "MINI PESHORE",
+    "category": "Të tjera",
+    "price": 1800.0,
+    "image": "/images/761237149_1067412972328424_8642655319920958900_n.jpg",
+    "url": "produkt-mini-peshore.html"
+  },
+  {
+    "name": "MOXOM MX-SK70 – Argëtim kudo, kurdo! 🔊",
+    "category": "Bokse muzike",
+    "price": 2500.0,
+    "image": "/images/651239831_951392487263807_2368400095311438112_n.jpg",
+    "url": "produkt-moxom-mx-sk70-argetim-kudo-kurdo.html"
+  },
+  {
+    "name": "🎙️Mp3 Makine",
+    "category": "Kasetofona",
+    "price": 1500.0,
+    "image": "/images/710742264_1016760710726984_8868251856203365961_n.jpg",
+    "url": "produkt-mp3-makine.html"
+  },
+  {
+    "name": "Multimeter origjinal Fluke",
+    "category": "Të tjera",
+    "price": 14000.0,
+    "image": "/images/741409337_1044734374596284_7397330360527873909_n.jpg",
+    "url": "produkt-multimeter-origjinal-fluke.html"
+  },
+  {
+    "name": "Nokia 6310",
+    "category": "Të tjera",
+    "price": 5500.0,
+    "image": "/images/622815793_918830073853382_8419744293005318548_n.jpg",
+    "url": "produkt-nokia-6310.html"
+  },
+  {
+    "name": "⌚ Ora për Fëmijë XO H140",
+    "category": "Ora smart",
+    "price": 3200.0,
+    "image": "/images/746439987_1050291537373901_142550876995857271_n.jpg",
+    "url": "produkt-ora-per-femije-xo-h140.html"
+  },
+  {
+    "name": "📡Perforcues wireless XIAOMI",
+    "category": "Të tjera",
+    "price": 2200.0,
+    "image": "/assets/product-placeholder.svg",
+    "url": "produkt-perforcues-wireless-xiaomi.html"
+  },
+  {
+    "name": "Perforcues wireless",
+    "category": "Pajisje interneti",
+    "price": 2000.0,
+    "image": "/images/617445316_912414214494968_7682927054781029500_n.jpg",
+    "url": "produkt-perforcues-wireless.html"
+  },
+  {
+    "name": "🛒 PESHORE ELEKTRONIKE ME PRINTIM BARCODE – TM-30F6",
+    "category": "Printera termikë",
+    "price": 50000.0,
+    "image": "/images/759199846_1064403005962754_2385892515056187522_n.jpg",
+    "url": "produkt-peshore-elektronike-me-printim-barcode-tm-30f6.html"
+  },
+  {
+    "name": "Pos dhe printer termik Rongta",
+    "category": "Printera termikë",
+    "price": 21500.0,
+    "image": "/images/745282744_1048755107527544_2532866431487313510_n.jpg",
+    "url": "produkt-pos-dhe-printer-termik-rongta.html"
+  },
+  {
+    "name": "PRINTER ETIKETASH",
+    "category": "Printera termikë",
+    "price": 8500.0,
+    "image": "/images/765872416_1069144562155265_4983401462350451148_n.jpg",
+    "url": "produkt-printer-etiketash.html"
+  },
+  {
+    "name": "Printer termik me bateri 100mm",
+    "category": "Printera termikë",
+    "price": 10000.0,
+    "image": "/images/738725300_1044649314604790_8002347887446877398_n.jpg",
+    "url": "produkt-printer-termik-me-bateri-100mm.html"
+  },
+  {
+    "name": "Printer,skaner,fotokopje",
+    "category": "Printera termikë",
+    "price": 12000.0,
+    "image": "/images/727277031_1029614142774974_8199095802256830378_n.jpg",
+    "url": "produkt-printerskanerfotokopje.html"
+  },
+  {
+    "name": "PS5 KONTROLLER",
+    "category": "Të tjera",
+    "price": 7500.0,
+    "image": "/images/762676986_1066560635746991_3060742234128380296_n.jpg",
+    "url": "produkt-ps5-kontroller.html"
+  },
+  {
+    "name": "PULT PER ANDROID BOX",
+    "category": "Të tjera",
+    "price": 800.0,
+    "image": "/images/763080595_1066544255748629_3665891894075434475_n.jpg",
+    "url": "produkt-pult-per-android-box.html"
+  },
+  {
+    "name": "Q6 smart Pos per bisnese",
+    "category": "Printera termikë",
+    "price": 17000.0,
+    "image": "/images/759078397_1063493529387035_4454299944817574063_n.jpg",
+    "url": "produkt-q6-smart-pos-per-bisnese.html"
+  },
+  {
+    "name": "🤳Shkop selfie stabilizues+tripod profesional Gimbal",
+    "category": "Aparate fotografike",
+    "price": 3500.0,
+    "image": "/images/671046068_975785871491135_3843854304899320498_n.jpg",
+    "url": "produkt-shkop-selfie-stabilizuestripod-profesional-gimbal.html"
+  },
+  {
+    "name": "Smart Watch HW Ultra 2",
+    "category": "Ora smart",
+    "price": 1500.0,
+    "image": "/images/763064878_1068314675571587_5112581109332308162_n.jpg",
+    "url": "produkt-smart-watch-hw-ultra-2.html"
+  },
+  {
+    "name": "📸 Sony Alpha 7C ",
+    "category": "Aparate fotografike",
+    "price": 125000.0,
+    "image": "/images/749878624_1057046803365041_1955661003502911807_n.jpg",
+    "url": "produkt-sony-alpha-7c.html"
+  },
+  {
+    "name": "📸 SONY RX100 VII",
+    "category": "Aparate fotografike",
+    "price": 120000.0,
+    "image": "/images/750229985_1057043680032020_7699548933582467465_n.jpg",
+    "url": "produkt-sony-rx100-vii.html"
+  },
+  {
+    "name": "STARTER,FRYRES GOMASH,NDRICUES,POWERBANK,KARIKUES TELEFONI",
+    "category": "Kasetofona",
+    "price": 7500.0,
+    "image": "/images/764714975_1069136078822780_3105045437499068449_n.jpg",
+    "url": "produkt-starterfryres-gomashndricuespowerbankkarikues-telefoni.html"
+  },
+  {
+    "name": "Tablet Xiaomi per femije",
+    "category": "Të tjera",
+    "price": 1800.0,
+    "image": "/assets/product-placeholder.svg",
+    "url": "produkt-tablet-xiaomi-per-femije.html"
+  },
+  {
+    "name": "THARESE FLOKESH MURALE",
+    "category": "Të tjera",
+    "price": 4000.0,
+    "image": "/images/763064930_1067653812304340_1523997940991280138_n.jpg",
+    "url": "produkt-tharese-flokesh-murale.html"
+  },
+  {
+    "name": "Touch Pos System",
+    "category": "Pajisje për biznese",
+    "price": 38000.0,
+    "image": "/images/750443134_1056706773399044_7611400918159121237_n.jpg",
+    "url": "produkt-touch-pos-system.html"
+  },
+  {
+    "name": "Vcds versioni i fundit 26.3",
+    "category": "Të tjera",
+    "price": 6500.0,
+    "image": "/images/759872630_1064148952654826_6424037963504084904_n.jpg",
+    "url": "produkt-vcds-versioni-i-fundit-263.html"
+  },
+  {
+    "name": "XBOX ONE KONTROLLER ORIGJINAL",
+    "category": "Të tjera",
+    "price": 7500.0,
+    "image": "/images/753904846_1058261509910237_8221320842690358109_n.jpg",
+    "url": "produkt-xbox-one-kontroller-origjinal.html"
+  },
+  {
+    "name": "📸 Xiaomi Smart Camera C500 Dual – Kamera inteligjente me dy lente!",
+    "category": "Kamera",
+    "price": 7500.0,
+    "image": "/images/645473557_942460611490328_6026837797843117618_n.jpg",
+    "url": "produkt-xiaomi-smart-camera-c500-dual-kamera-inteligjente-me-dy-lente.html"
+  },
+  {
+    "name": "📷 Xiaomi Smart Camera – Siguri 24/7 për shtëpinë tuaj",
+    "category": "Kamera",
+    "price": 5000.0,
+    "image": "/images/618736722_913728954363494_2029881008325201053_n.jpg",
+    "url": "produkt-xiaomi-smart-camera-siguri-247-per-shtepine-tuaj.html"
+  },
+  {
+    "name": "📷 XO CR03 Wi-Fi Kamera Sigurie",
+    "category": "Kamera",
+    "price": 5000.0,
+    "image": "/images/729877268_1032731892463199_5289680745894545576_n.jpg",
+    "url": "produkt-xo-cr03-wi-fi-kamera-sigurie.html"
+  }
+]
