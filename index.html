@@ -1539,6 +1539,30 @@ function formatPrice(price) {
   return `${new Intl.NumberFormat("sq-AL").format(price)} Lekë`;
 }
 
+
+function slugifyProductName(value) {
+  return String(value || "produkt")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLocaleLowerCase("sq")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "produkt";
+}
+
+function productSlug(product) {
+  return product?.slug || slugifyProductName(product?.name);
+}
+
+function productPageUrl(product) {
+  return `produkt/${encodeURIComponent(productSlug(product))}.html`;
+}
+
+function goToProductPage(productId) {
+  const product = products.find(entry => entry.id === Number(productId));
+  if (!product) return;
+  window.location.href = productPageUrl(product);
+}
+
 function canonicalCategory(product) {
   const raw = String(product.category || "").trim();
   const name = String(product.name || "").toLocaleLowerCase("sq");
@@ -1632,12 +1656,12 @@ function getVisibleProducts() {
 
 function productCard(product) {
   return `
-    <article class="product-card" data-product-card="${product.id}" tabindex="0" role="button" aria-label="Shiko detajet e ${product.name}">
+    <article class="product-card" data-product-card="${product.id}" data-product-url="${productPageUrl(product)}" tabindex="0" role="link" aria-label="Hap ${product.name}">
       <div class="product-image">
         ${product.badge ? `<span class="product-badge">${product.badge}</span>` : ""}
-        <button class="quick-view" type="button" data-quick-view="${product.id}" aria-label="Shiko detajet e ${product.name}" title="Shiko detajet">
+        <a class="quick-view" href="${productPageUrl(product)}" aria-label="Hap ${product.name}" title="Shiko produktin">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.7"/></svg>
-        </button>
+        </a>
         <img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23f1f5ff%22/%3E%3Ctext x=%22300%22 y=%22185%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2226%22 fill=%22%23246bfd%22%3EElektronika Shop.al%3C/text%3E%3Ctext x=%22300%22 y=%22225%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2218%22 fill=%22%2368708a%22%3EFoto nuk u ngarkua%3C/text%3E%3C/svg%3E'" />
       </div>
       <div class="product-info">
@@ -1653,7 +1677,7 @@ function productCard(product) {
             <span>Porosit në WhatsApp</span>
           </button>
         </div>
-        <span class="product-detail-hint">Kliko kartën për specifikat</span>
+        <span class="product-detail-hint">Shiko produktin dhe specifikat →</span>
       </div>
     </article>
   `;
@@ -2037,14 +2061,14 @@ function bindEvents() {
 
     const productCardTarget = event.target.closest("[data-product-card]");
     if (productCardTarget && !event.target.closest("button, a, select, input")) {
-      openProductModal(Number(productCardTarget.dataset.productCard));
+      goToProductPage(Number(productCardTarget.dataset.productCard));
     }
 
     const addButton = event.target.closest("[data-add-cart]");
     if (addButton) addToCart(Number(addButton.dataset.addCart));
 
     const quickView = event.target.closest("[data-quick-view]");
-    if (quickView) openProductModal(Number(quickView.dataset.quickView));
+    if (quickView) goToProductPage(Number(quickView.dataset.quickView));
 
     const whatsappButton = event.target.closest("[data-whatsapp-product]");
     if (whatsappButton) productWhatsApp(Number(whatsappButton.dataset.whatsappProduct));
@@ -2069,7 +2093,7 @@ function bindEvents() {
       const activeItem = els.liveSearchPanel.querySelectorAll("[data-live-product]")[liveSearchActiveIndex];
       if (activeItem) {
         closeLiveSearch();
-        openProductModal(Number(activeItem.dataset.liveProduct));
+        goToProductPage(Number(activeItem.dataset.liveProduct));
         return;
       }
     }
@@ -2105,7 +2129,7 @@ function bindEvents() {
       const productTarget = event.target.closest("[data-live-product]");
       if (productTarget) {
         closeLiveSearch();
-        openProductModal(Number(productTarget.dataset.liveProduct));
+        goToProductPage(Number(productTarget.dataset.liveProduct));
         return;
       }
       if (event.target.closest("[data-live-all]")) goToSearchResults(els.headerSearch.value);
@@ -2151,7 +2175,7 @@ function bindEvents() {
     const card = event.target.closest?.("[data-product-card]");
     if (card && (event.key === "Enter" || event.key === " ")) {
       event.preventDefault();
-      openProductModal(Number(card.dataset.productCard));
+      goToProductPage(Number(card.dataset.productCard));
     }
   });
 }
@@ -2206,6 +2230,7 @@ async function loadCmsProducts() {
         const data = await response.json();
         return {
           id: cmsProductId(file.name),
+          slug: file.name.replace(/\.json$/i, ""),
           name: data.name || "Produkt pa emër",
           price: Number(data.price || 0),
           category: data.category || "Produkte të tjera",
